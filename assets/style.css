@@ -276,10 +276,24 @@ h1 {
 .job-head {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 4px;
+}
+.job-company-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.job-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+  padding: 3px;
+  flex-shrink: 0;
 }
 .job-company { font-weight: 700; font-size: 1.05rem; }
 .job-dates {

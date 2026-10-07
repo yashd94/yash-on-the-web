@@ -35,6 +35,7 @@ const PERSONAS = {
     experience: [
       {
         company: "Merck & Co.",
+        logo: "assets/logos/merck.png",
         role: "Senior Scientist, Machine Learning",
         location: "Boston, MA",
         start: "Dec 2023",
@@ -50,6 +51,7 @@ const PERSONAS = {
       },
       {
         company: "Prometheus Biosciences",
+        logo: "assets/logos/prometheus.jpg",
         sub: "A wholly-owned subsidiary of Merck & Co. Inc.",
         role: "Machine Learning Engineer",
         location: "San Diego, CA",
@@ -64,6 +66,7 @@ const PERSONAS = {
       },
       {
         company: "Fresenius Medical Care North America",
+        logo: "assets/logos/fresenius.jpg",
         role: "Machine Learning Engineer",
         location: "Remote / Boston, MA",
         start: "Oct 2020",
@@ -76,6 +79,7 @@ const PERSONAS = {
       },
       {
         company: "ZS",
+        logo: "assets/logos/zs.webp",
         sub: "Business Technology Group",
         role: "Data Analyst",
         location: "Pune, India",
@@ -113,6 +117,7 @@ const PERSONAS = {
       {
         company: "Tong Hua Men",
         link: "https://huanstaichi.com",
+        logo: "assets/logos/tong-hua-men.png",
         role: "Assistant Instructor, Tai Chi",
         location: "Cambridge, MA",
         start: "",
@@ -125,6 +130,7 @@ const PERSONAS = {
       {
         company: "Breathe Cambridge",
         link: "https://www.breathecambridge.com/team",
+        logo: "assets/logos/breathe.jpg",
         role: "Pilates Instructor",
         location: "Cambridge, MA",
         start: "",

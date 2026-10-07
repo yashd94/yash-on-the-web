@@ -143,7 +143,10 @@
         return `
       <div class="job">
         <div class="job-head">
-          <span class="job-company">${companyLabel}</span>
+          <div class="job-company-row">
+            ${job.logo ? `<img class="job-logo" src="${job.logo}" alt="${job.company} logo" loading="lazy" />` : ""}
+            <span class="job-company">${companyLabel}</span>
+          </div>
           ${dates ? `<span class="job-dates">${dates}</span>` : ""}
         </div>
         <div class="job-role">${job.role}${job.location ? ` · ${job.location}` : ""}</div>
