@@ -136,7 +136,7 @@ const PERSONAS = {
         start: "",
         end: "Present",
         bullets: [
-          "Teach mat and equipment-based Pilates classes focused on strength, mobility, and body awareness.",
+          "Teach mat pilates classes focused on strength, mobility, and body awareness.",
         ],
       },
     ],
