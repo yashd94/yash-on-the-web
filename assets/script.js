@@ -40,6 +40,7 @@
     document.documentElement.setAttribute("data-persona", key);
     chineseNameEl.hidden = key !== "wellness";
     taglineEl.textContent = persona.tagline;
+    taglineEl.style.display = persona.tagline ? "" : "none";
     summaryEl.innerHTML = persona.summaryParagraphs.map((p) => `<p>${p}</p>`).join("");
 
     resumeLinks.innerHTML = persona.resumes

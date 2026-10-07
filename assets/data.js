@@ -2,7 +2,7 @@
 
 const PERSONAS = {
   research: {
-    tagline: "Research engineer spanning computational biology, multi-omic data integration, and ML systems.",
+    tagline: "",
     summaryParagraphs: [
       "Curious, experienced research engineer with 8+ years of experience spanning multiple modalities of data " +
         "in or adjacent to biotech, pharma, and healthcare. I develop computational methods and pipelines for " +
@@ -88,7 +88,7 @@ const PERSONAS = {
   },
 
   wellness: {
-    tagline: "Tai Chi instructor and 4th Duan black belt, competitive martial artist, and Pilates instructor.",
+    tagline: "",
     summaryParagraphs: [
       "Tai Chi and Xin Yi Dao practitioner under the tutelage of Sifu Huan Zhang. Pilates instructor at Breathe Cambridge.",
     ],
