@@ -1,0 +1,106 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.55in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\definecolor{accent}{HTML}{174A7C}
+\definecolor{textgray}{HTML}{333333}
+\newcommand{\resumeHeader}[4]{%
+  {\Huge\bfseries #1}\\[-1pt]
+  {\large\bfseries\color{accent}#2}\\[3pt]
+  {#3 \; | \; #4}\\[-2pt]
+}
+\newcommand{\role}[4]{%
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}\vspace{2pt}
+}
+\newcommand{\resumelist}{\begin{itemize}\setlength{\itemsep}{1.2pt}\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}}
+\newcommand{\resumelistend}{\end{itemize}}
+\renewcommand\labelitemi{\textcolor{accent}{\small$\bullet$}}
+\begin{document}
+\color{textgray}
+
+\resumeHeader{YASH DESHPANDE}{Principal Machine Learning Engineer | AI Systems | Multimodal AI | Computer Vision}{Boston, MA | +1 917 362 9676 | \href{mailto:yashrajas@gmail.com}{yashrajas@gmail.com}}{\href{https://www.linkedin.com/in/yash--deshpande/}{linkedin.com/in/yash--deshpande} | \href{https://github.com/yashd94}{github.com/yashd94}}
+
+\vspace{4pt}\textcolor{accent}{\large\bfseries SUMMARY}\vspace{2pt}\hrule\vspace{4pt}
+Principal-level Machine Learning Engineer and Applied AI Scientist with 8+ years of experience building scalable ML platforms, multimodal AI systems, computer vision models, NLP solutions, and cloud-native machine learning infrastructure. Experienced leading end-to-end ML initiatives across research and production settings, including large-scale image processing, representation learning, Bayesian modeling, high-dimensional data integration, reproducible experimentation, and GPU-accelerated inference workflows. Strong technical leader who translates ambiguous scientific and product objectives into robust ML architecture, production-grade pipelines, and reusable engineering systems.
+
+\vspace{6pt}\textcolor{accent}{\large\bfseries CORE STRENGTHS}\vspace{2pt}\hrule\vspace{4pt}
+\begin{tabularx}{\textwidth}{>{\bfseries\color{accent}}p{1.15in} X}
+AI/ML & Deep learning, computer vision, foundation models, multimodal learning, representation learning, NLP, graph neural networks, Bayesian ML, statistical learning, predictive modeling \\
+ML Systems & Production ML systems, distributed data processing, GPU inference, feature pipelines, experiment tracking, model monitoring, reproducible ML workflows, performance optimization \\
+Engineering & Python, PyTorch, TensorFlow, scikit-learn, pandas, NumPy, SQL, R, Shell, Docker, Git, MLflow, Weights \& Biases, Nextflow, CI/CD \\
+Cloud/Data & AWS, Google Cloud Storage, large-scale imaging data, Parquet, Zarr, DuckDB, genomics, transcriptomics, histopathology, clinical text \\
+Leadership & Technical strategy, platform architecture, cross-functional execution, stakeholder alignment, engineering standards, mentoring, roadmap definition
+\end{tabularx}
+
+\vspace{6pt}\textcolor{accent}{\large\bfseries PROFESSIONAL EXPERIENCE}\vspace{2pt}\hrule\vspace{4pt}
+\role{Merck \& Co.}{Dec 2023 - Present}{Senior Scientist, Machine Learning}{Boston, MA}
+\resumelist
+  \item Lead machine learning initiatives spanning multimodal AI, single-cell foundation modeling, and computer vision for large-scale biomedical data analysis.
+  \item Architect ML systems for genetic perturbation response prediction using single-cell RNA-seq datasets, linking learned representations to target discovery and prioritization workflows.
+  \item Design scalable whole-slide image processing and embedding pipelines for H\&E histopathology, including patch extraction, tissue masking, coordinate stores, GPU inference, and downstream analytics outputs.
+  \item Build and optimize high-throughput data pipelines using PyTorch, Parquet, Zarr, GCS, local NVMe caching, batched transfer workflows, and resumable processing patterns for large imaging corpora.
+  \item Develop computer vision models for cell segmentation and tissue characterization, enabling quantitative imaging biomarkers for translational and companion diagnostic applications.
+  \item Establish reproducible ML development patterns, experiment tracking, data validation, logging, and performance diagnostics for long-running, large-scale training and inference workflows.
+  \item Partner with translational scientists, computational biologists, ML engineers, and research stakeholders to define technical strategy and convert exploratory modeling efforts into reusable AI systems.
+\resumelistend
+
+\role{Prometheus Biosciences, a wholly owned subsidiary of Merck \& Co.}{Jun 2022 - Dec 2023}{Machine Learning Engineer}{San Diego, CA}
+\resumelist
+  \item Led development of \textbf{Minerva}, a multimodal companion diagnostics discovery platform within Prometheus360, enabling versioned, reproducible, and extensible model development across heterogeneous omics datasets.
+  \item Architected scalable ML workflows for feature generation, whole-genome scanning, QTL analysis, evidence meta-analysis, and biomarker prioritization using Nextflow and cloud-native processing patterns.
+  \item Built Bayesian classification and genotype clustering workflows for predictive modeling downstream of SNP discovery and companion diagnostic feature selection.
+  \item Created reusable infrastructure for model development, provenance tracking, reproducibility, and collaborative experimentation across scientific and engineering teams.
+  \item Acted as a technical bridge between ML engineering, immunology, computational biology, radiology, and biomarker strategy teams to align platform capabilities with high-value translational use cases.
+\resumelistend
+
+\role{Fresenius Medical Care North America}{Oct 2020 - May 2022}{Machine Learning Engineer}{Remote / Boston, MA}
+\resumelist
+  \item Built cloud-based ML platform capabilities for an internal AI workbench on AWS, enabling scalable model monitoring and faster iteration across cross-functional analytics teams.
+  \item Developed reusable ML infrastructure and tooling to accelerate adoption of cloud-native experimentation, deployment, and monitoring workflows.
+  \item Built a Python-based NLP model for unstructured clinical text that identified 40+ previously unreported annual abdominal pain events, improving downstream clinical signal detection.
+  \item Improved ML engineering velocity by standardizing infrastructure patterns, data access workflows, and operational monitoring for applied AI initiatives.
+\resumelistend
+
+\role{ZS Associates}{Jul 2016 - May 2018}{Data Analyst, Business Technology Group}{Pune, India}
+\resumelist
+  \item Built and maintained production ETL pipelines using Shell, PostgreSQL, AWS Redshift, and workflow automation for client-facing analytics platforms.
+  \item Reduced front-end processing time by 70\% on a business rules platform through performance-focused workflow redesign and automation.
+  \item Supported recurring analytics and decision-support systems through scalable data engineering, query optimization, and operational process improvements.
+\resumelistend
+
+\vspace{6pt}\textcolor{accent}{\large\bfseries SELECTED PRINCIPAL ML ENGINEERING HIGHLIGHTS}\vspace{2pt}\hrule\vspace{4pt}
+\resumelist
+  \item Built end-to-end AI systems across data ingestion, feature engineering, model development, training/inference orchestration, experiment tracking, and downstream analytics integration.
+  \item Designed large-scale computer vision pipelines for whole-slide histopathology data, including patch coordinate extraction, tissue quality metrics, embedding generation, local/remote storage synchronization, and cache eviction.
+  \item Delivered multimodal ML platform capabilities supporting molecular, imaging, genotype, and clinical data integration for high-stakes decision workflows.
+  \item Developed NLP, Bayesian ML, graph neural network, and representation learning solutions across clinical text, imaging, molecular, and multimodal datasets.
+  \item Established engineering practices for resumability, observability, validation, and performance diagnostics in long-running ML pipelines.
+\resumelistend
+
+\vspace{6pt}\textcolor{accent}{\large\bfseries EDUCATION}\vspace{2pt}\hrule\vspace{4pt}
+\textbf{New York University} \hfill Sep 2018 - May 2020\\
+Master of Science in Data Science\\[2pt]
+\textbf{University of Pune} \hfill Aug 2012 - May 2016\\
+Bachelor of Engineering in Electronics \& Telecommunication Engineering
+
+\vspace{6pt}\textcolor{accent}{\large\bfseries SELECTED PUBLICATIONS}\vspace{2pt}\hrule\vspace{4pt}
+\resumelist
+  \item Gerardo A. Flores et al. \textit{Pandora's Regret: A Proper Scoring Rule for Evaluating Sequential Search}. arXiv:2605.01936, 2026.
+  \item Ruiwen Ding et al. \textit{Predicting Ulcer in H\&E Images of Inflammatory Bowel Disease Using Domain-Knowledge-Driven Graph Neural Network}. arXiv:2504.09430, 2025.
+  \item Houda Alberts et al. \textit{VisualSem: A High-Quality Knowledge Graph for Vision and Language}. arXiv:2008.09150, 2020.
+  \item Ningyuan Huang et al. \textit{Endowing Language Models with Multimodal Knowledge Graph Representations}. arXiv:2206.13163, 2022.
+\resumelistend
+
+\vspace{6pt}\textcolor{accent}{\large\bfseries LANGUAGES}\vspace{2pt}\hrule\vspace{4pt}
+English, Marathi, Hindi; basic Japanese
+
+\end{document}

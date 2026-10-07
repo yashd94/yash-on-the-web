@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yash Deshpande — ML for Biology &amp; AI Systems</title>
+<meta name="description" content="Yash Deshpande — Machine learning scientist and engineer working across computational biology, multimodal AI, and ML systems." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top">YD</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <p class="eyebrow">Hello, I'm</p>
+    <h1>Yash Deshpande</h1>
+    <p class="tagline" id="tagline">Machine learning scientist working at the intersection of biology, imaging, and scalable AI systems.</p>
+
+    <div class="persona-switch" role="group" aria-label="View my work as">
+      <span class="persona-label">View my work as:</span>
+      <div class="segmented" id="personaToggle">
+        <button class="segment active" data-persona="biology" type="button">Computational Biologist</button>
+        <button class="segment" data-persona="ml" type="button">ML Engineer</button>
+      </div>
+    </div>
+
+    <p class="summary" id="summaryText"></p>
+
+    <div class="hero-links">
+      <a href="mailto:yashrajas@gmail.com" class="btn btn-primary">Email me</a>
+      <a href="https://www.linkedin.com/in/yash--deshpande/" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+      <a href="https://github.com/yashd94" target="_blank" rel="noopener" class="btn">GitHub</a>
+      <a id="resumeDownload" href="assets/resume-biology.pdf" download class="btn">Download résumé</a>
+    </div>
+  </section>
+
+  <section id="about" class="section wrap">
+    <h2><span class="kicker">01</span> About</h2>
+    <div class="about-grid">
+      <p>
+        I'm a machine learning scientist/engineer with 8+ years of experience building computational
+        methods and scalable systems for single-cell genomics, statistical genetics, multi-modal data
+        integration, companion diagnostic development, and translational biomarker discovery in biopharma —
+        alongside production ML platforms, computer vision pipelines, and cloud-native infrastructure.
+        I currently work at Merck &amp; Co., developing single-cell RNA-seq models for genetic perturbation
+        response and histopathology cell-segmentation models for target prioritization.
+      </p>
+      <ul class="facts">
+        <li><span>Location</span>Boston, MA</li>
+        <li><span>Focus</span>Omics ML · Multimodal AI · Computer Vision</li>
+        <li><span>Education</span>M.S. Data Science, NYU</li>
+        <li><span>Languages</span>English, Marathi, Hindi, basic Japanese</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience" class="section wrap">
+    <h2><span class="kicker">02</span> Experience</h2>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <section id="skills" class="section wrap">
+    <h2><span class="kicker">03</span> Skills</h2>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </section>
+
+  <section id="publications" class="section wrap">
+    <h2><span class="kicker">04</span> Selected Publications</h2>
+    <ul class="pub-list">
+      <li>
+        <span class="pub-title">Pandora's Regret: A Proper Scoring Rule for Evaluating Sequential Search</span>
+        <span class="pub-meta">Gerardo A. Flores et al. · 2026 · <a href="https://arxiv.org/abs/2605.01936" target="_blank" rel="noopener">arXiv:2605.01936</a></span>
+      </li>
+      <li>
+        <span class="pub-title">Predicting ulcer in H&amp;E images of inflammatory bowel disease using domain-knowledge-driven graph neural network</span>
+        <span class="pub-meta">Ruiwen Ding et al. · 2025 · <a href="https://arxiv.org/abs/2504.09430" target="_blank" rel="noopener">arXiv:2504.09430</a></span>
+      </li>
+      <li>
+        <span class="pub-title">VisualSem: A high-quality knowledge graph for vision and language</span>
+        <span class="pub-meta">Houda Alberts et al. · 2020 · <a href="https://arxiv.org/abs/2008.09150" target="_blank" rel="noopener">arXiv:2008.09150</a></span>
+      </li>
+      <li>
+        <span class="pub-title">Endowing Language Models with Multimodal Knowledge Graph Representations</span>
+        <span class="pub-meta">Ningyuan Huang et al. · 2022 · <a href="https://arxiv.org/abs/2206.13163" target="_blank" rel="noopener">arXiv:2206.13163</a></span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section wrap">
+    <h2><span class="kicker">05</span> Get in touch</h2>
+    <div class="contact-card">
+      <p>Open to conversations about ML for biology, multimodal AI, and applied research collaborations.</p>
+      <div class="hero-links">
+        <a href="mailto:yashrajas@gmail.com" class="btn btn-primary">yashrajas@gmail.com</a>
+        <a href="tel:+19173629676" class="btn">+1 917 362 9676</a>
+        <a href="https://www.linkedin.com/in/yash--deshpande/" target="_blank" rel="noopener" class="btn">linkedin.com/in/yash--deshpande</a>
+        <a href="https://github.com/yashd94" target="_blank" rel="noopener" class="btn">github.com/yashd94</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <p>&copy; <span id="year"></span> Yash Deshpande. Built with HTML, CSS &amp; a little JS.</p>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
