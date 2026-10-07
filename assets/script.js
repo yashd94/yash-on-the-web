@@ -22,6 +22,8 @@
   const linkedinLink = document.getElementById("linkedinLink");
   const githubLink = document.getElementById("githubLink");
   const emailMeBtn = document.getElementById("emailMeBtn");
+  const pilatesBtn = document.getElementById("pilatesBtn");
+  const taichiBtn = document.getElementById("taichiBtn");
   const skillsGrid = document.getElementById("skillsGrid");
   const timeline = document.getElementById("timeline");
   const experienceHeading = document.getElementById("experienceHeading");
@@ -56,7 +58,9 @@
       .join("");
     linkedinLink.style.display = persona.showSocialLinks ? "" : "none";
     githubLink.style.display = persona.showSocialLinks ? "" : "none";
-    emailMeBtn.style.display = persona.showSocialLinks ? "" : "none";
+    emailMeBtn.style.display = persona.showEmail ? "" : "none";
+    pilatesBtn.style.display = persona.showWellnessCTAs ? "" : "none";
+    taichiBtn.style.display = persona.showWellnessCTAs ? "" : "none";
 
     experienceHeading.textContent = persona.experienceHeading;
     skillsHeading.textContent = persona.skillsHeading;

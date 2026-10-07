@@ -24,6 +24,8 @@ const PERSONAS = {
     showPoems: false,
     showAwards: false,
     showSocialLinks: true,
+    showEmail: true,
+    showWellnessCTAs: false,
     skills: [
       { label: "Data", items: ["Single-cell & bulk RNA-seq", "GWAS", "Single-cell genetic perturbation screens", "H&E and IHC histopathology slides", "Large-scale imaging data"] },
       { label: "AI / ML", items: ["Deep learning", "Computer vision", "Foundation models", "Multimodal learning", "Representation learning", "NLP", "Graph neural networks", "Bayesian ML", "Statistical learning"] },
@@ -101,6 +103,8 @@ const PERSONAS = {
     showContact: false,
     showPoems: false,
     showSocialLinks: true,
+    showEmail: false,
+    showWellnessCTAs: true,
     skills: [
       { label: "Martial Arts", items: ["Tai Chi Chuan", "4th Duan rank certified", "Push hands", "Weapons forms", "Competitive sparring"] },
       { label: "Movement & Teaching", items: ["Pilates instruction", "Reformer & mat Pilates", "Injury-aware movement coaching", "Group & 1:1 instruction"] },
@@ -152,6 +156,8 @@ const PERSONAS = {
     showPoems: true,
     showAwards: false,
     showSocialLinks: false,
+    showEmail: true,
+    showWellnessCTAs: false,
     skills: [],
     experience: [],
     poems: [
