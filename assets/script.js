@@ -71,14 +71,14 @@
         (poem, idx) => `
       <article class="poem">
         <h3 class="poem-title">${poem.title}</h3>
-        <p class="poem-subtitle">${poem.subtitle}</p>
+        ${poem.subtitle ? `<p class="poem-subtitle">${poem.subtitle}</p>` : ""}
         <details class="poem-details">
           <summary class="poem-toggle">Read poem</summary>
           ${poem.stanzas
             .map(
               (stanza) => `
             <div class="poem-stanza">
-              <p class="poem-label">${stanza.label}</p>
+              ${stanza.label ? `<p class="poem-label">${stanza.label}</p>` : ""}
               ${
                 stanza.lines.length
                   ? `<p class="poem-lines">${stanza.lines
