@@ -140,10 +140,8 @@ const PERSONAS = {
   },
 
   poetry: {
-    tagline: "Poems written between stillness and motion.",
-    summaryParagraphs: [
-      "A small collection of poems — the first inspired by the Tai Chi form itself.",
-    ],
+    tagline: "Somewhere between stillness and motion, I try to write poems.",
+    summaryParagraphs: [],
     resumes: [],
     experienceHeading: "",
     skillsHeading: "",
