@@ -153,6 +153,12 @@ h1 {
   background-clip: text;
   color: transparent;
 }
+.chinese-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: -6px 0 14px;
+}
 .tagline {
   font-size: 1.15rem;
   color: var(--text-dim);

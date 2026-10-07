@@ -86,10 +86,7 @@ const PERSONAS = {
   wellness: {
     tagline: "Tai Chi instructor and 4th Duan black belt, competitive martial artist, and Pilates instructor.",
     summaryParagraphs: [
-      "I teach and compete in traditional Chinese martial arts as a 4th Duan ranked practitioner and assistant " +
-        "instructor at Tong Hua Men in Cambridge. I am a two-time medalist at the World Open Martial Arts " +
-        "Championship, and a certified Pilates instructor at Breathe Cambridge.",
-      "The discipline that my wellness practice has gifted me informs my scientific research, and vice versa.",
+      "Tai Chi and Xin Yi Dao practitioner under the tutelage of Sifu Huan Zhang. Pilates instructor at Breathe Cambridge.",
     ],
     resumes: [],
     experienceHeading: "Training & Teaching",

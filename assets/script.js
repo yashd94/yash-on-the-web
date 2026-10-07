@@ -16,6 +16,7 @@
   // Persona rendering
   const toggle = document.getElementById("personaToggle");
   const taglineEl = document.getElementById("tagline");
+  const chineseNameEl = document.getElementById("chineseName");
   const summaryEl = document.getElementById("summaryText");
   const resumeLinks = document.getElementById("resumeLinks");
   const skillsGrid = document.getElementById("skillsGrid");
@@ -29,6 +30,7 @@
   function renderPersona(key) {
     const persona = PERSONAS[key];
     document.documentElement.setAttribute("data-persona", key);
+    chineseNameEl.hidden = key !== "wellness";
     taglineEl.textContent = persona.tagline;
     summaryEl.innerHTML = persona.summaryParagraphs.map((p) => `<p>${p}</p>`).join("");
 
