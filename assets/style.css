@@ -3,8 +3,11 @@
   --bg-elev: #11151f;
   --text: #e7eaf2;
   --text-dim: #9aa4b8;
-  --accent: #5ec6ff;
-  --accent-2: #7a8cff;
+  --accent: #6f9bd1;
+  --accent-2: #1d3b66;
+  --accent-strong: #345a8c;
+  --accent-strong-2: #17315a;
+  --on-accent: #f5f8fc;
   --border: #1f2838;
   --radius: 14px;
   --maxw: 880px;
@@ -16,8 +19,11 @@
   --bg-elev: #ffffff;
   --text: #171a21;
   --text-dim: #51586b;
-  --accent: #1f6fb2;
-  --accent-2: #4f46e5;
+  --accent: #1b3a67;
+  --accent-2: #0c2340;
+  --accent-strong: #1b3a67;
+  --accent-strong-2: #0c2340;
+  --on-accent: #f5f8fc;
   --border: #e4e7ef;
   color-scheme: light;
 }
@@ -172,8 +178,8 @@ h1 {
   transition: background 0.2s, color 0.2s;
 }
 .segment.active {
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  color: #0b0e14;
+  background: linear-gradient(90deg, var(--accent-strong), var(--accent-strong-2));
+  color: var(--on-accent);
 }
 
 .summary {
@@ -200,8 +206,8 @@ h1 {
 }
 .btn:hover { transform: translateY(-1px); border-color: var(--accent); }
 .btn-primary {
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  color: #0b0e14;
+  background: linear-gradient(90deg, var(--accent-strong), var(--accent-strong-2));
+  color: var(--on-accent);
   border: none;
 }
 
