@@ -14,6 +14,21 @@
   color-scheme: dark;
 }
 
+/* Wellness persona: warm, sunny palette (overrides navy accents above) */
+[data-persona="wellness"] {
+  --accent: #f0a84e;
+  --accent-2: #9c3f0a;
+  --accent-strong: #b4500f;
+  --accent-strong-2: #9c3f0a;
+}
+
+[data-theme="light"][data-persona="wellness"] {
+  --accent: #8a4210;
+  --accent-2: #5c2b08;
+  --accent-strong: #8a4210;
+  --accent-strong-2: #5c2b08;
+}
+
 [data-theme="light"] {
   --bg: #f7f8fb;
   --bg-elev: #ffffff;

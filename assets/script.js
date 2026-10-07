@@ -28,6 +28,7 @@
 
   function renderPersona(key) {
     const persona = PERSONAS[key];
+    document.documentElement.setAttribute("data-persona", key);
     taglineEl.textContent = persona.tagline;
     summaryEl.innerHTML = persona.summaryParagraphs.map((p) => `<p>${p}</p>`).join("");
 
