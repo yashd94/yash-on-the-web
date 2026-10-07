@@ -29,6 +29,21 @@
   --accent-strong-2: #5c2b08;
 }
 
+/* Poetry persona: sunflower gold palette */
+[data-persona="poetry"] {
+  --accent: #f2c230;
+  --accent-2: #6b5307;
+  --accent-strong: #7a5e08;
+  --accent-strong-2: #6b5307;
+}
+
+[data-theme="light"][data-persona="poetry"] {
+  --accent: #6b5307;
+  --accent-2: #4a3905;
+  --accent-strong: #6b5307;
+  --accent-strong-2: #4a3905;
+}
+
 [data-theme="light"] {
   --bg: #f7f8fb;
   --bg-elev: #ffffff;
@@ -173,11 +188,6 @@ h1 {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-.persona-label {
-  font-size: 0.85rem;
-  color: var(--text-dim);
-  font-weight: 500;
-}
 .segmented {
   display: inline-flex;
   background: var(--bg-elev);
@@ -273,6 +283,41 @@ h1 {
 .job-sub { color: var(--text-dim); font-size: 0.8rem; font-style: italic; margin-bottom: 10px; }
 .job ul { margin: 10px 0 0; padding-left: 20px; }
 .job li { margin-bottom: 8px; color: var(--text-dim); font-size: 0.93rem; }
+
+/* Poems */
+.poem-list { display: flex; flex-direction: column; gap: 32px; }
+.poem {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 30px;
+}
+.poem-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0 0 4px;
+  color: var(--accent);
+}
+.poem-subtitle {
+  font-style: italic;
+  color: var(--text-dim);
+  margin: 0 0 20px;
+  font-size: 0.95rem;
+}
+.poem-stanza { margin-bottom: 18px; }
+.poem-stanza:last-child { margin-bottom: 0; }
+.poem-label {
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+}
+.poem-lines {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
 
 /* Skills */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }

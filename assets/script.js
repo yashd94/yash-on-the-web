@@ -26,6 +26,9 @@
   const skillsSection = document.getElementById("skills");
   const publicationsSection = document.getElementById("publications");
   const contactSection = document.getElementById("contact");
+  const experienceSection = document.getElementById("experience");
+  const poemsSection = document.getElementById("poems");
+  const poemsList = document.getElementById("poemsList");
 
   function renderPersona(key) {
     const persona = PERSONAS[key];
@@ -40,9 +43,36 @@
 
     experienceHeading.textContent = persona.experienceHeading;
     skillsHeading.textContent = persona.skillsHeading;
+    experienceSection.style.display = persona.showExperience ? "" : "none";
     skillsSection.style.display = persona.showSkills ? "" : "none";
     publicationsSection.style.display = persona.showPublications ? "" : "none";
     contactSection.style.display = persona.showContact ? "" : "none";
+    poemsSection.style.display = persona.showPoems ? "" : "none";
+
+    poemsList.innerHTML = (persona.poems || [])
+      .map(
+        (poem) => `
+      <article class="poem">
+        <h3 class="poem-title">${poem.title}</h3>
+        <p class="poem-subtitle">${poem.subtitle}</p>
+        ${poem.stanzas
+          .map(
+            (stanza) => `
+          <div class="poem-stanza">
+            <p class="poem-label">${stanza.label}</p>
+            ${
+              stanza.lines.length
+                ? `<p class="poem-lines">${stanza.lines
+                    .map((l) => (l === "" ? "<br>" : l))
+                    .join("<br>")}</p>`
+                : ""
+            }
+          </div>`
+          )
+          .join("")}
+      </article>`
+      )
+      .join("");
 
     skillsGrid.innerHTML = persona.skills
       .map(
