@@ -19,6 +19,8 @@
   const chineseNameEl = document.getElementById("chineseName");
   const summaryEl = document.getElementById("summaryText");
   const resumeLinks = document.getElementById("resumeLinks");
+  const linkedinLink = document.getElementById("linkedinLink");
+  const githubLink = document.getElementById("githubLink");
   const skillsGrid = document.getElementById("skillsGrid");
   const timeline = document.getElementById("timeline");
   const experienceHeading = document.getElementById("experienceHeading");
@@ -29,6 +31,8 @@
   const experienceSection = document.getElementById("experience");
   const poemsSection = document.getElementById("poems");
   const poemsList = document.getElementById("poemsList");
+  const awardsSection = document.getElementById("awards");
+  const awardsList = document.getElementById("awardsList");
 
   function renderPersona(key) {
     const persona = PERSONAS[key];
@@ -40,6 +44,8 @@
     resumeLinks.innerHTML = persona.resumes
       .map((r) => `<a href="${r.href}" download class="btn">${r.label}</a>`)
       .join("");
+    linkedinLink.style.display = persona.showSocialLinks ? "" : "none";
+    githubLink.style.display = persona.showSocialLinks ? "" : "none";
 
     experienceHeading.textContent = persona.experienceHeading;
     skillsHeading.textContent = persona.skillsHeading;
@@ -48,28 +54,42 @@
     publicationsSection.style.display = persona.showPublications ? "" : "none";
     contactSection.style.display = persona.showContact ? "" : "none";
     poemsSection.style.display = persona.showPoems ? "" : "none";
+    awardsSection.style.display = persona.showAwards ? "" : "none";
+
+    awardsList.innerHTML = (persona.awards || [])
+      .map(
+        (award) => `
+      <div class="award">
+        <span class="award-name">${award.name}</span>
+        <span class="award-result">${award.result}</span>
+      </div>`
+      )
+      .join("");
 
     poemsList.innerHTML = (persona.poems || [])
       .map(
-        (poem) => `
+        (poem, idx) => `
       <article class="poem">
         <h3 class="poem-title">${poem.title}</h3>
         <p class="poem-subtitle">${poem.subtitle}</p>
-        ${poem.stanzas
-          .map(
-            (stanza) => `
-          <div class="poem-stanza">
-            <p class="poem-label">${stanza.label}</p>
-            ${
-              stanza.lines.length
-                ? `<p class="poem-lines">${stanza.lines
-                    .map((l) => (l === "" ? "<br>" : l))
-                    .join("<br>")}</p>`
-                : ""
-            }
-          </div>`
-          )
-          .join("")}
+        <details class="poem-details">
+          <summary class="poem-toggle">Read poem</summary>
+          ${poem.stanzas
+            .map(
+              (stanza) => `
+            <div class="poem-stanza">
+              <p class="poem-label">${stanza.label}</p>
+              ${
+                stanza.lines.length
+                  ? `<p class="poem-lines">${stanza.lines
+                      .map((l) => (l === "" ? "<br>" : l))
+                      .join("<br>")}</p>`
+                  : ""
+              }
+            </div>`
+            )
+            .join("")}
+        </details>
       </article>`
       )
       .join("");

@@ -284,6 +284,22 @@ h1 {
 .job ul { margin: 10px 0 0; padding-left: 20px; }
 .job li { margin-bottom: 8px; color: var(--text-dim); font-size: 0.93rem; }
 
+/* Awards */
+.awards-list { display: flex; flex-direction: column; gap: 14px; }
+.award {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+}
+.award-name { font-weight: 700; }
+.award-result { color: var(--text-dim); font-size: 0.93rem; }
+
 /* Poems */
 .poem-list { display: flex; flex-direction: column; gap: 32px; }
 .poem {
@@ -303,6 +319,28 @@ h1 {
   color: var(--text-dim);
   margin: 0 0 20px;
   font-size: 0.95rem;
+}
+.poem-details summary.poem-toggle {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--accent);
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.poem-details summary.poem-toggle::-webkit-details-marker { display: none; }
+.poem-details summary.poem-toggle::before {
+  content: "+ ";
+}
+.poem-details[open] summary.poem-toggle::before {
+  content: "– ";
+}
+.poem-details[open] summary.poem-toggle {
+  margin-bottom: 20px;
 }
 .poem-stanza { margin-bottom: 18px; }
 .poem-stanza:last-child { margin-bottom: 0; }
