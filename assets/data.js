@@ -13,12 +13,13 @@ const PERSONAS = {
       "My scientific training and curiosity are informed by my immersion in wellness, and vice versa.",
     ],
     resumes: [
-      { label: "Résumé — Computational Biology", href: "assets/resume-biology.pdf" },
-      { label: "Résumé — ML Engineer", href: "assets/resume-ml-engineer.tex" },
+      { label: "Résumé", href: "assets/resume-biology.pdf" },
     ],
     experienceHeading: "Experience",
     skillsHeading: "Skills",
+    showSkills: true,
     showPublications: true,
+    showContact: true,
     skills: [
       { label: "Data", items: ["Single-cell & bulk RNA-seq", "GWAS", "Single-cell genetic perturbation screens", "H&E and IHC histopathology slides", "Large-scale imaging data"] },
       { label: "AI / ML", items: ["Deep learning", "Computer vision", "Foundation models", "Multimodal learning", "Representation learning", "NLP", "Graph neural networks", "Bayesian ML", "Statistical learning"] },
@@ -85,17 +86,17 @@ const PERSONAS = {
   wellness: {
     tagline: "Tai Chi instructor and 4th Duan black belt, competitive martial artist, and Pilates instructor.",
     summaryParagraphs: [
-      "Alongside my work in research, I teach and compete in traditional Chinese martial arts and instruct " +
-        "Pilates. I'm a 4th Duan ranked practitioner and assistant instructor at Tong Hua Men, a two-time " +
-        "medalist at the World Open Martial Arts Championship, and a certified Pilates instructor at Breathe " +
-        "Cambridge — bringing the same discipline, precision, and patience to movement and teaching that I " +
-        "bring to research.",
-      "My scientific training and curiosity are informed by my immersion in wellness, and vice versa.",
+      "I teach and compete in traditional Chinese martial arts as a 4th Duan ranked practitioner and assistant " +
+        "instructor at Tong Hua Men in Cambridge. I am a two-time medalist at the World Open Martial Arts " +
+        "Championship, and a certified Pilates instructor at Breathe Cambridge.",
+      "The discipline that my wellness practice has gifted me informs my scientific research, and vice versa.",
     ],
     resumes: [],
     experienceHeading: "Training & Teaching",
     skillsHeading: "Practices & Credentials",
+    showSkills: false,
     showPublications: false,
+    showContact: false,
     skills: [
       { label: "Martial Arts", items: ["Tai Chi Chuan", "4th Duan rank certified", "Push hands", "Weapons forms", "Competitive sparring"] },
       { label: "Movement & Teaching", items: ["Pilates instruction", "Reformer & mat Pilates", "Injury-aware movement coaching", "Group & 1:1 instruction"] },
@@ -105,7 +106,7 @@ const PERSONAS = {
         company: "Tong Hua Men",
         link: "https://huanstaichi.com",
         role: "Assistant Instructor, Tai Chi",
-        location: "",
+        location: "Cambridge, MA",
         start: "",
         end: "Present",
         bullets: [

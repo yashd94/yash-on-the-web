@@ -22,7 +22,9 @@
   const timeline = document.getElementById("timeline");
   const experienceHeading = document.getElementById("experienceHeading");
   const skillsHeading = document.getElementById("skillsHeading");
+  const skillsSection = document.getElementById("skills");
   const publicationsSection = document.getElementById("publications");
+  const contactSection = document.getElementById("contact");
 
   function renderPersona(key) {
     const persona = PERSONAS[key];
@@ -35,7 +37,9 @@
 
     experienceHeading.textContent = persona.experienceHeading;
     skillsHeading.textContent = persona.skillsHeading;
+    skillsSection.style.display = persona.showSkills ? "" : "none";
     publicationsSection.style.display = persona.showPublications ? "" : "none";
+    contactSection.style.display = persona.showContact ? "" : "none";
 
     skillsGrid.innerHTML = persona.skills
       .map(
