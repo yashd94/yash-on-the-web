@@ -21,6 +21,7 @@
   const resumeLinks = document.getElementById("resumeLinks");
   const linkedinLink = document.getElementById("linkedinLink");
   const githubLink = document.getElementById("githubLink");
+  const emailMeBtn = document.getElementById("emailMeBtn");
   const skillsGrid = document.getElementById("skillsGrid");
   const timeline = document.getElementById("timeline");
   const experienceHeading = document.getElementById("experienceHeading");
@@ -46,6 +47,7 @@
       .join("");
     linkedinLink.style.display = persona.showSocialLinks ? "" : "none";
     githubLink.style.display = persona.showSocialLinks ? "" : "none";
+    emailMeBtn.style.display = persona.showSocialLinks ? "" : "none";
 
     experienceHeading.textContent = persona.experienceHeading;
     skillsHeading.textContent = persona.skillsHeading;
@@ -70,10 +72,14 @@
       .map(
         (poem, idx) => `
       <article class="poem">
-        <h3 class="poem-title">${poem.title}</h3>
-        ${poem.subtitle ? `<p class="poem-subtitle">${poem.subtitle}</p>` : ""}
         <details class="poem-details">
-          <summary class="poem-toggle">Read poem</summary>
+          <summary class="poem-toggle">
+            <span class="poem-title-row">
+              <span class="poem-title">${poem.title}</span>
+              <span class="poem-toggle-icon" aria-hidden="true"></span>
+            </span>
+            ${poem.subtitle ? `<span class="poem-subtitle">${poem.subtitle}</span>` : ""}
+          </summary>
           ${poem.stanzas
             .map(
               (stanza) => `

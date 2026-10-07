@@ -148,9 +148,19 @@ body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.25);
   flex-shrink: 0;
 }
+.headshot-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+.headshot-email { display: none; }
+[data-persona="poetry"] .headshot-email { display: inline-block; }
 @media (max-width: 640px) {
   .hero-top { flex-direction: column-reverse; align-items: flex-start; }
   .headshot { width: 120px; height: 120px; }
+  .headshot-wrap { align-items: flex-start; }
 }
 .eyebrow {
   font-family: "JetBrains Mono", monospace;
@@ -311,34 +321,44 @@ h1 {
 .poem-title {
   font-size: 1.4rem;
   font-weight: 800;
-  margin: 0 0 4px;
+  margin: 0;
   color: var(--accent);
 }
 .poem-subtitle {
+  display: block;
   font-style: italic;
+  font-weight: 400;
   color: var(--text-dim);
-  margin: 0 0 20px;
+  margin: 4px 0 0;
   font-size: 0.95rem;
 }
-.poem-details summary.poem-toggle {
-  cursor: pointer;
-  font-weight: 700;
-  color: var(--accent);
-  list-style: none;
+.poem-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.poem-toggle-icon {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 8px 16px;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
   border: 1px solid var(--border);
-  border-radius: 999px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+.poem-toggle-icon::before { content: "+"; }
+.poem-details[open] .poem-toggle-icon::before { content: "–"; }
+.poem-details summary.poem-toggle {
+  cursor: pointer;
+  list-style: none;
+  display: block;
 }
 .poem-details summary.poem-toggle::-webkit-details-marker { display: none; }
-.poem-details summary.poem-toggle::before {
-  content: "+ ";
-}
-.poem-details[open] summary.poem-toggle::before {
-  content: "– ";
-}
+.poem-details summary.poem-toggle::marker { content: ""; }
 .poem-details[open] summary.poem-toggle {
   margin-bottom: 20px;
 }
