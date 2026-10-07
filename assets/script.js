@@ -17,7 +17,7 @@
   const toggle = document.getElementById("personaToggle");
   const taglineEl = document.getElementById("tagline");
   const summaryEl = document.getElementById("summaryText");
-  const resumeLink = document.getElementById("resumeDownload");
+  const resumeLinks = document.getElementById("resumeLinks");
   const skillsGrid = document.getElementById("skillsGrid");
   const timeline = document.getElementById("timeline");
   const experienceHeading = document.getElementById("experienceHeading");
@@ -27,14 +27,11 @@
   function renderPersona(key) {
     const persona = PERSONAS[key];
     taglineEl.textContent = persona.tagline;
-    summaryEl.textContent = persona.summary;
+    summaryEl.innerHTML = persona.summaryParagraphs.map((p) => `<p>${p}</p>`).join("");
 
-    if (persona.resumeFile) {
-      resumeLink.href = persona.resumeFile;
-      resumeLink.style.display = "";
-    } else {
-      resumeLink.style.display = "none";
-    }
+    resumeLinks.innerHTML = persona.resumes
+      .map((r) => `<a href="${r.href}" download class="btn">${r.label}</a>`)
+      .join("");
 
     experienceHeading.textContent = persona.experienceHeading;
     skillsHeading.textContent = persona.skillsHeading;
@@ -84,5 +81,5 @@
   });
 
   const stored = localStorage.getItem("persona");
-  renderPersona(PERSONAS[stored] ? stored : "biology");
+  renderPersona(PERSONAS[stored] ? stored : "research");
 })();

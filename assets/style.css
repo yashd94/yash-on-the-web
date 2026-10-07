@@ -182,6 +182,8 @@ h1 {
   font-size: 1rem;
   margin: 0 0 28px;
 }
+.summary p { margin: 0 0 14px; }
+.summary p:last-child { margin-bottom: 0; }
 
 .hero-links { display: flex; flex-wrap: wrap; gap: 10px; }
 .btn {
