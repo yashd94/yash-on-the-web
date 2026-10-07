@@ -34,6 +34,14 @@
   const poemsList = document.getElementById("poemsList");
   const awardsSection = document.getElementById("awards");
   const awardsList = document.getElementById("awardsList");
+  const navExperience = document.getElementById("navExperience");
+  const navExperienceLabel = document.getElementById("navExperienceLabel");
+  const navAwards = document.getElementById("navAwards");
+  const navPoems = document.getElementById("navPoems");
+  const navSkills = document.getElementById("navSkills");
+  const navSkillsLabel = document.getElementById("navSkillsLabel");
+  const navPublications = document.getElementById("navPublications");
+  const navContact = document.getElementById("navContact");
 
   function renderPersona(key) {
     const persona = PERSONAS[key];
@@ -58,6 +66,15 @@
     contactSection.style.display = persona.showContact ? "" : "none";
     poemsSection.style.display = persona.showPoems ? "" : "none";
     awardsSection.style.display = persona.showAwards ? "" : "none";
+
+    navExperienceLabel.textContent = persona.experienceHeading;
+    navSkillsLabel.textContent = persona.skillsHeading;
+    navExperience.style.display = persona.showExperience ? "" : "none";
+    navAwards.style.display = persona.showAwards ? "" : "none";
+    navPoems.style.display = persona.showPoems ? "" : "none";
+    navSkills.style.display = persona.showSkills ? "" : "none";
+    navPublications.style.display = persona.showPublications ? "" : "none";
+    navContact.style.display = persona.showContact ? "" : "none";
 
     awardsList.innerHTML = (persona.awards || [])
       .map(
