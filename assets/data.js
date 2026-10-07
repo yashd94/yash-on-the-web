@@ -102,7 +102,7 @@ const PERSONAS = {
     showPublications: false,
     showContact: false,
     showPoems: false,
-    showSocialLinks: true,
+    showSocialLinks: false,
     showEmail: false,
     showWellnessCTAs: true,
     skills: [
