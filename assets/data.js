@@ -11,6 +11,7 @@ const PERSONAS = {
       "References available on request. I thrive in environments that are cross-functional, learning from " +
         "close collaborations with translational scientists.",
       "My scientific training and curiosity are informed by my immersion in wellness, and vice versa.",
+      "Open to conversations about ML for biology, multimodal AI, and applied research collaborations.",
     ],
     resumes: [
       { label: "Résumé", href: "assets/resume-biology.pdf" },
