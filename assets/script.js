@@ -20,12 +20,25 @@
   const resumeLink = document.getElementById("resumeDownload");
   const skillsGrid = document.getElementById("skillsGrid");
   const timeline = document.getElementById("timeline");
+  const experienceHeading = document.getElementById("experienceHeading");
+  const skillsHeading = document.getElementById("skillsHeading");
+  const publicationsSection = document.getElementById("publications");
 
   function renderPersona(key) {
     const persona = PERSONAS[key];
     taglineEl.textContent = persona.tagline;
     summaryEl.textContent = persona.summary;
-    resumeLink.href = persona.resumeFile;
+
+    if (persona.resumeFile) {
+      resumeLink.href = persona.resumeFile;
+      resumeLink.style.display = "";
+    } else {
+      resumeLink.style.display = "none";
+    }
+
+    experienceHeading.textContent = persona.experienceHeading;
+    skillsHeading.textContent = persona.skillsHeading;
+    publicationsSection.style.display = persona.showPublications ? "" : "none";
 
     skillsGrid.innerHTML = persona.skills
       .map(
@@ -39,18 +52,24 @@
       )
       .join("");
 
-    timeline.innerHTML = EXPERIENCE.map(
-      (job) => `
+    timeline.innerHTML = persona.experience
+      .map((job) => {
+        const dates = [job.start, job.end].filter(Boolean).join(" – ");
+        const companyLabel = job.link
+          ? `<a href="${job.link}" target="_blank" rel="noopener">${job.company}</a>`
+          : job.company;
+        return `
       <div class="job">
         <div class="job-head">
-          <span class="job-company">${job.company}</span>
-          <span class="job-dates">${job.start} – ${job.end}</span>
+          <span class="job-company">${companyLabel}</span>
+          ${dates ? `<span class="job-dates">${dates}</span>` : ""}
         </div>
-        <div class="job-role">${job.role} · ${job.location}</div>
+        <div class="job-role">${job.role}${job.location ? ` · ${job.location}` : ""}</div>
         ${job.sub ? `<div class="job-sub">${job.sub}</div>` : ""}
-        <ul>${job.bullets[key].map((b) => `<li>${b}</li>`).join("")}</ul>
-      </div>`
-    ).join("");
+        <ul>${job.bullets.map((b) => `<li>${b}</li>`).join("")}</ul>
+      </div>`;
+      })
+      .join("");
 
     toggle.querySelectorAll(".segment").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.persona === key);
@@ -64,5 +83,6 @@
     renderPersona(btn.dataset.persona);
   });
 
-  renderPersona(localStorage.getItem("persona") || "biology");
+  const stored = localStorage.getItem("persona");
+  renderPersona(PERSONAS[stored] ? stored : "biology");
 })();

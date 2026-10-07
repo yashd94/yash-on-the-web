@@ -30,15 +30,21 @@
 <main id="top">
 
   <section class="hero wrap">
-    <p class="eyebrow">Hello, I'm</p>
-    <h1>Yash Deshpande</h1>
-    <p class="tagline" id="tagline">Machine learning scientist working at the intersection of biology, imaging, and scalable AI systems.</p>
+    <div class="hero-top">
+      <div class="hero-copy">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Yash Deshpande</h1>
+        <p class="tagline" id="tagline">Machine learning scientist working at the intersection of biology, imaging, and scalable AI systems.</p>
+      </div>
+      <img class="headshot" src="assets/headshot.jpg" alt="Portrait of Yash Deshpande outdoors by the water" width="220" height="220" />
+    </div>
 
-    <div class="persona-switch" role="group" aria-label="View my work as">
-      <span class="persona-label">View my work as:</span>
+    <div class="persona-switch" role="group" aria-label="View my work in">
+      <span class="persona-label">View my work in:</span>
       <div class="segmented" id="personaToggle">
-        <button class="segment active" data-persona="biology" type="button">Computational Biologist</button>
-        <button class="segment" data-persona="ml" type="button">ML Engineer</button>
+        <button class="segment active" data-persona="biology" type="button">Computational Biology</button>
+        <button class="segment" data-persona="ml" type="button">Machine Learning</button>
+        <button class="segment" data-persona="wellness" type="button">Wellness</button>
       </div>
     </div>
 
@@ -73,12 +79,12 @@
   </section>
 
   <section id="experience" class="section wrap">
-    <h2><span class="kicker">02</span> Experience</h2>
+    <h2><span class="kicker">02</span> <span id="experienceHeading">Experience</span></h2>
     <div class="timeline" id="timeline"></div>
   </section>
 
   <section id="skills" class="section wrap">
-    <h2><span class="kicker">03</span> Skills</h2>
+    <h2><span class="kicker">03</span> <span id="skillsHeading">Skills</span></h2>
     <div class="skills-grid" id="skillsGrid"></div>
   </section>
 
