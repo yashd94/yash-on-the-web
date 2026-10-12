@@ -144,8 +144,12 @@ const PERSONAS = {
     showAwards: true,
     awards: [
       {
-        name: "World Open Martial Arts Championship",
-        result: "Two-time medalist — gold and silver.",
+        name: "World Open Martial Arts Championship, Boston (2025)",
+        result: "Gold, Short Staff Sparring",
+      },
+      {
+        name: "World Open Martial Arts Championship, Boston (2023)",
+        result: "Silver, Short Staff Form Demonstration",
       },
     ],
   },
