@@ -145,11 +145,11 @@ const PERSONAS = {
     awards: [
       {
         name: "World Open Martial Arts Championship, Boston (2025)",
-        result: "Gold, Short Staff Sparring",
+        result: "Gold Medal, Short Staff Sparring",
       },
       {
         name: "World Open Martial Arts Championship, Boston (2023)",
-        result: "Silver, Short Staff Form Demonstration",
+        result: "Silver Medal, Short Staff Form Demonstration",
       },
     ],
   },
