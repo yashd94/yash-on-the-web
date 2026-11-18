@@ -35,12 +35,21 @@ const PERSONAS = {
     ],
     experience: [
       {
+        company: "Avenda Health",
+        logo: "assets/logos/avenda.png",
+        role: "Senior Machine Learning Engineer",
+        location: "",
+        start: "2026",
+        end: "Present",
+        bullets: [],
+      },
+      {
         company: "Merck & Co.",
         logo: "assets/logos/merck.png",
         role: "Senior Scientist, Machine Learning",
         location: "Boston, MA",
         start: "Dec 2023",
-        end: "Present",
+        end: "2026",
         bullets: [
           "Lead machine learning initiatives spanning single-cell genomics, genetic perturbation modeling, multimodal AI, and computer vision for large-scale biomedical data analysis.",
           "Develop single-cell RNA-seq models for genetic perturbation response, linking perturbation-driven transcriptional programs and learned representations to candidate biological mechanisms for target discovery and prioritization.",
@@ -111,7 +120,7 @@ const PERSONAS = {
     showEmail: false,
     showWellnessCTAs: true,
     skills: [
-      { label: "Martial Arts", items: ["Tai Chi Chuan", "4th Duan rank certified", "Push hands", "Weapons forms", "Competitive sparring"] },
+      { label: "Martial Arts", items: ["Tai Chi Chuan", "5th Duan rank certified", "Push hands", "Weapons forms", "Competitive sparring"] },
       { label: "Movement & Teaching", items: ["Pilates instruction", "Reformer & mat Pilates", "Injury-aware movement coaching", "Group & 1:1 instruction"] },
     ],
     experience: [
@@ -125,7 +134,7 @@ const PERSONAS = {
         end: "Present",
         bullets: [
           "Assist in teaching traditional Tai Chi forms, push hands, and foundational martial arts principles to students of all levels.",
-          "4th Duan rank certified.",
+          "5th Duan rank certified.",
         ],
       },
       {
@@ -143,6 +152,10 @@ const PERSONAS = {
     ],
     showAwards: true,
     awards: [
+      {
+        name: "World Open Martial Arts Championship (WOMAC) (2026)",
+        result: "Gold Medal, Tai Chi Open Hand",
+      },
       {
         name: "World Open Martial Arts Championship, Boston (2025)",
         result: "Gold Medal, Short Staff Sparring",
