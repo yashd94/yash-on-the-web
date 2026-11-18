@@ -39,7 +39,7 @@ const PERSONAS = {
         logo: "assets/logos/avenda.png",
         role: "Senior Machine Learning Engineer",
         location: "",
-        start: "2026",
+        start: "Nov 2026",
         end: "Present",
         bullets: [],
       },
@@ -49,7 +49,7 @@ const PERSONAS = {
         role: "Senior Scientist, Machine Learning",
         location: "Boston, MA",
         start: "Dec 2023",
-        end: "2026",
+        end: "Nov 2026",
         bullets: [
           "Lead machine learning initiatives spanning single-cell genomics, genetic perturbation modeling, multimodal AI, and computer vision for large-scale biomedical data analysis.",
           "Develop single-cell RNA-seq models for genetic perturbation response, linking perturbation-driven transcriptional programs and learned representations to candidate biological mechanisms for target discovery and prioritization.",
